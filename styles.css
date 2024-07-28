@@ -333,14 +333,11 @@ body {
 
   .header .navbar,
   .header .navbar2 {
-    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0;
   }
-  .navbar2{
-    margin-left: 5rem;
-  }
+  
 
   .container {
     padding: 8px;
