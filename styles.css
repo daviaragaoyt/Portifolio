@@ -381,7 +381,7 @@ body {
     border: 1px solid black;
     border-radius: 20px;
     width: calc(100% - 20px);
-    
+    margin-bottom: 20px;
   }
 
   .footer {
