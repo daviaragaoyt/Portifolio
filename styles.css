@@ -8,6 +8,9 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   background-color: #dae1e3;
   color: black;
   transition: background 1s;
@@ -61,12 +64,8 @@ body {
   color: black;
 }
 
-.dark .footer{
-  color: #000;
-}
-
 .dark .fa-whatsapp {
-  color: green
+  color: green;
 }
 
 .header {
@@ -98,13 +97,12 @@ body {
 }
 
 .navbar2 {
-  width: 100%;
   display: flex;
-  margin-left: 5rem;
   justify-content: flex-end;
 }
 
 .container {
+  flex: 1;
   text-align: center;
   align-items: center;
   justify-content: space-between;
@@ -115,7 +113,6 @@ body {
 
 .about {
   display: flex;
-  margin: 0;
   justify-content: space-between;
   align-items: end;
 }
@@ -156,7 +153,6 @@ body {
 .projects {
   margin-top: 20rem;
   text-align: center;
-  height: 60rem;
 }
 
 .projects h1 {
@@ -168,6 +164,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .project-card {
@@ -176,17 +173,14 @@ body {
   border-radius: 10px;
   overflow: hidden;
   margin: 10px;
-  width: 500px;
-  height: 500px;
+  width: 300px;
   transition: transform 0.3s;
 }
 
-
 .project-card img {
   width: 100%;
-  height: 50%;
+  height: 200px;
   object-fit: cover;
-  text-decoration: none;
 }
 
 .project-info {
@@ -206,27 +200,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  object-fit: cover;
   margin-top: 10px;
 }
-.project-links i{
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-.project-links img {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  object-fit: cover;
-}
+
 .project-links a {
   color: #fff;
   text-decoration: none;
-  padding: 20px;
-  margin-right: 20px;
+  padding: 10px 20px;
   font-weight: 500;
+}
+.project-links a img{
+  width:20px;
+  height:20px;
 }
 
 .project-links a:hover {
@@ -241,40 +226,39 @@ body {
   background-color: #333;
   color: #fff;
   text-align: center;
-  padding: 100px;
+  padding: 50px 20px;
   margin-top: 20px;
 }
 
 .footer h2 {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .fa-whatsapp {
-  margin-right: 25px;
   font-size: 2.1rem;
   color: #25d366;
 }
 
 .contact-links {
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.contact-links a {
+.contact-item {
+  margin: 10px 20px;
+  text-align: center;
+}
+
+.contact-item a {
   color: #fff;
   text-decoration: none;
   font-size: 20px;
 }
 
-.contact-links img {
+.contact-item img {
   width: 2rem;
   border-radius: 50%;
-}
-
-.contact-item {
-  text-align: center;
-  margin: 0 20px;
 }
 
 .label {
@@ -320,8 +304,6 @@ body {
   color: yellow;
 }
 
-
-
 @media (max-width: 768px) {
   * {
     max-width: 100%;
@@ -337,7 +319,6 @@ body {
     justify-content: center;
     margin: 0;
   }
-  
 
   .container {
     padding: 8px;
@@ -357,14 +338,14 @@ body {
   .profile-pic {
     max-width: 15rem;
     max-height: 15rem;
-    border-radius:50%;
-    margin-top:5rem;
+    border-radius: 50%;
+    margin-top: 5rem;
   }
 
   .profile-pic img {
     max-width: 15rem;
     max-height: 15rem;
-    border-radius:50%;
+    border-radius: 50%;
     margin-right: 0;
   }
 
@@ -385,11 +366,8 @@ body {
   }
 
   .footer {
-   
-    height: 90%;
     width: 100%;
-   margin-top: 180vh;
-    padding: 5px;
+    padding: 20px;
   }
 
   .contact-links {
@@ -401,16 +379,11 @@ body {
     margin-bottom: 1rem;
   }
 
-  .contact-links a {
+  .contact-item a {
     font-size: 14px;
   }
 
-  .contact-links img {
+  .contact-item img {
     width: 2rem;
-  }
-
-  .contact-links strong {
-    
-    margin-left: 0;
   }
 }
