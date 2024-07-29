@@ -385,9 +385,10 @@ body {
   }
 
   .footer {
+    position: relative;
     height: 90%;
     width: 100%;
-   margin-top: 170vh;
+   margin-top: 180vh;
     padding: 5px;
   }
 
