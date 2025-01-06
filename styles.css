@@ -20,11 +20,11 @@ body {
 
 .dark {
   background-color: #333;
-  color: #fff;
+  color: #ceeaf7;
 }
 
 .dark .header {
-  background-color: #dae1e3;
+  background-color: #ceeaf7;
 }
 
 .dark .navbar a {
@@ -39,14 +39,21 @@ body {
   border-color: #333;
 }
 
+.dark .description {
+  border-radius: 10px;
+  background-color: #ceeaf7;
+ 
+}
+
 .dark .description h1,
 .dark .description p,
 .dark .description a {
-  color: #fff;
+ 
+  color: #000;
 }
 
 .dark .footer {
-  background-color: #dae1e3;
+  background-color: #ceeaf7;
 }
 
 .dark .footer h2,
@@ -56,7 +63,7 @@ body {
 }
 
 .dark .project-card {
-  background-color: #fff;
+  background-color: #ceeaf7;
   color: #000;
 }
 
@@ -72,7 +79,7 @@ body {
   background-color: #333;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 1.5rem 7%;
   border-bottom: var(--border);
   position: fixed;
@@ -163,7 +170,7 @@ body {
 .project-list {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
@@ -209,9 +216,9 @@ body {
   padding: 10px 20px;
   font-weight: 500;
 }
-.project-links a img{
-  width:20px;
-  height:20px;
+.project-links a img {
+  width: 20px;
+  height: 20px;
 }
 
 .project-links a:hover {
